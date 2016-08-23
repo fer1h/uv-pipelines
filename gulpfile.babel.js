@@ -47,7 +47,7 @@ function copy() {
 
 // Copy page templates into finished HTML files
 function pages() {
-  return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
+  return gulp.src('src/pages/**/*.{php,html,hbs,handlebars}')
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
@@ -133,8 +133,8 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
+  gulp.watch('src/pages/**/*.{php,html}').on('all', gulp.series(pages, browser.reload));
+  gulp.watch('src/{layouts,partials}/**/*.{php,html}').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
