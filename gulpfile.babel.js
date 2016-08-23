@@ -118,9 +118,26 @@ function images() {
 
 // Start a server with BrowserSync to preview the site in
 function server(done) {
+  // browser.init({
+  //   server: PATHS.dist, port: PORT
+  // });
+
+  //para usar php
+
   browser.init({
-    server: PATHS.dist, port: PORT
+    // para usar archivos php y direccionar el sync a xampp
+    proxy: "http://localhost/uv-pipelines",
+    // server: {
+    //   baseDir:PATHS.dist,
+    //   index: "index.php"
+    // },
+    port: PORT,
+    // host: "localhost"
+    ui: {
+      port: 8080
+    }
   });
+
   done();
 }
 
