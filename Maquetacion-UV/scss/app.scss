@@ -52,11 +52,25 @@
 
 
 
-// Agregado
+// Codigo custom
+
+@import "scss/kernspaltung-style_utils/style_utils";
+@import "bower_components/font-awesome/scss/font-awesome";
+
+//
 *{outline: 1px solid black}
-body,h1,h2,h3,h4{font-family:"Open Sans"}
+
+body,h1,h2,h3,h4{
+
+  font-family:"Open Sans" !important
+
+}
+
 h3{font-weight: bold;
-  text-transform: uppercase;}
+
+  text-transform: uppercase;
+
+}
 
 
 //Colores
@@ -66,7 +80,7 @@ $red: #fa1730;
 
 //Background
 
-.color-negro-bg{
+.color-negro-bg {
 
 background-color:$black;
 
@@ -131,7 +145,7 @@ font-weight: bold;
 
 //Contenido
 
-.titulo-categoría{
+.titulo-categoria{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 13px;

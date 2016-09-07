@@ -1,0 +1,60 @@
+
+$white: #fff;
+$black: #000;
+$primario: #0bc1ed;
+$secundario: #06a0bb;
+$terciario: #00f070;
+$neutral_claro: #eee;
+$neutral_medio: #aaa;
+$neutral_oscuro: #444;
+
+$lista-colores: (
+  blanco   $white,
+  negro   $black,
+  primario   $primario,
+  secundario $secundario,
+  terciario $terciario,
+  neutral_claro $neutral_claro,
+  neutral_medio $neutral_medio,
+  neutral_oscuro $neutral_oscuro
+);
+
+
+@each $value in $lista-colores {      
+
+	   .color-#{nth($value, 1)} {
+			& {
+				color: nth($value, 2) !important;
+			}
+	   }
+	   .color-#{nth($value, 1)}-bg {
+			& {
+				background-color: nth($value, 2) !important;
+			}
+	   }
+	   .color-#{nth($value, 1)}-bd {
+			& {
+				border: 1px solid white;
+				border-color: nth($value, 2) !important;
+			}
+	   }
+
+	   .color-#{nth($value, 1)}-hover:hover {
+			& {
+				color: nth($value, 2) !important;
+			}
+	   }
+	   .color-#{nth($value, 1)}-hover-bg:hover {
+			& {
+				background-color: nth($value, 2) !important;
+			}
+	   }
+	   .color-#{nth($value, 1)}-hover-bd:hover {
+			& {
+				border: 1px solid white;
+				border-color: nth($value, 2) !important;
+			}
+	   }
+
+
+}
