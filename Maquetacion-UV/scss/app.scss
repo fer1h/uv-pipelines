@@ -58,11 +58,11 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 
 //
-*{outline: 1px solid black}
+// *{outline: 1px solid black}
 
 body,h1,h2,h3,h4{
 
-  font-family:"Open Sans" !important
+  font-family:"Open sans"
 
 }
 
@@ -95,7 +95,7 @@ background-color:$red;
 //Título Master
 .titulo-master{
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 35px;
   color:$white;
 }
@@ -109,8 +109,11 @@ background-color:$red;
 
 // Text -------------------------------->
 
-.color-white{
+.nav-white{
 color:$white;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
 }
 
 .white{
@@ -151,3 +154,12 @@ font-weight: bold;
   font-size: 13px;
   color:$red;
 }
+
+#circle li {list-style-type: disc;}
+#disc li {list-style-type: circle;}
+
+.color-rojo-bd {
+  border: 2px solid $red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
