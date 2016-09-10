@@ -82,13 +82,13 @@ $red: #fa1730;
 
 .color-negro-bg {
 
-background-color:$black;
+  background-color:$black;
 
 }
 
 .color-rojo-bg{
 
-background-color:$red;
+  background-color:$red;
 
 }
 
@@ -110,14 +110,14 @@ background-color:$red;
 // Text -------------------------------->
 
 .nav-white{
-color:$white;
-text-transform: uppercase;
-font-weight: bold;
-font-size: 14px;
+  color:$white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .white{
-color:$white;
+  color:$white;
 }
 
 .black-link{
@@ -142,8 +142,8 @@ color:$white;
 }
 
 .text-bold{
-color:$black;
-font-weight: bold;
+  color:$black;
+  font-weight: bold;
 }
 
 //Contenido
@@ -162,4 +162,24 @@ font-weight: bold;
   border: 2px solid $red;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+// menu-movil
+#bonoton-menu-movil {
+
+  border: 0px !important;
+
+  & a {
+
+    background-color: transparent;
+    color: $black;
+
   }
+
+  & > a:hover {
+
+    background-color: transparent;
+    color: $red;
+
+  }
+
+}
