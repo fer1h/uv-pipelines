@@ -70,7 +70,7 @@ include_once "secciones/compartidas/header.php";
         <div id="servicioContenido " class="columns large-8">
 
           <div class="columns p-1 h-65-v imgLiquid imgLiquidFill">
-            <img src="./img/img-servicio.png" alt="" />
+            <img src="./img/1.png" alt="" />
           </div>
           <div class="columns p-1 h-40-v">
             <h3 class="font-lg-XL">Elaboración, certificación de ingeniería & owner's engineering</h3>

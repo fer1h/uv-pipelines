@@ -50,7 +50,7 @@
 
 
   <!-- Header escritorio-->
-  <header id="uv-header" class="columns p-0 h-21-v show-for-large">
+  <header id="uv-header" class="columns p-0 h-23-v show-for-large">
 
     <div id="barra" class="columns p-0 h-22 color-negro-bg white">
 
