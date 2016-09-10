@@ -3,14 +3,15 @@ var u;
 var barras =$('#bonoton-menu-movil a i');
 var menumovil = $('#menu-movil');
 
-$(document).foundation();
+
 //
 // ready
 $(document).ready(function() {
 
+$(this).foundation();
+
   u = new Utils();
 
-  u.shareH();
   u.vcenter();
 
   $('.imgLiquid.imgLiquidFill').imgLiquid();
@@ -24,15 +25,31 @@ $(document).ready(function() {
   //reajuste en cambio de pantalla
   u.addWindowResizeFunction(
     function() {
+
       u.vcenter();
-      u.shareH();
 
     });
 
+
+//
+    $(window).resize(function() {
+      console.log('resize');
+      if ($(this).width() >= 1024 && ! menumovil.hasClass('hidden')) {
+        console.log('menor a 1024');
+
+        menumovil.addClass('hidden');
+
+      }
+
+
+    });
+    //
+
   });
-// termina ready
+  // termina ready
 
   function menu_movil() {
+
 
     $('#bonoton-menu-movil a').on('click', function() {
       //

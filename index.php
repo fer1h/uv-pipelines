@@ -17,7 +17,7 @@ for ($i=0; $i < 4; $i++):
   ?>
 
 
-    <div class="columns slider h-100 m0 imgLiquid imgLiquidFill">
+    <div class="columns slider h-100 m0 z1k imgLiquid imgLiquidFill">
 
       <img src="img/slider/<?php echo $i;?>.png" alt="" />
 
