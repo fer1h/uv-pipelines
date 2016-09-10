@@ -19,7 +19,7 @@ for ($i=0; $i < 4; $i++):
 
     <div class="columns slider h-100 m0 imgLiquid imgLiquidFill">
 
-      <img src="http://fakeimg.pl/300?text=placeholder" alt="" />
+      <img src="img/slider/<?php echo $i;?>.png" alt="" />
 
     </div>
 

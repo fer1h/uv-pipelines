@@ -65,6 +65,6 @@ $(document).ready(function() {
       arrows:false,
       speed: 1000,
       autoplay:true,
-      autoplaySpeed:1000
+      autoplaySpeed:5000
     });
   }
