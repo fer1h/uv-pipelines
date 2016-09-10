@@ -4,20 +4,33 @@ include_once "secciones/compartidas/header.php";
 
 
 
- ?>
+?>
 
 
 
 <!-- slider -->
 
-<div id="slider-inicio" class="columns h-82-v p-0">
-  <div class="columns h-100 imgLiquid imgLiquidFill">
+  <div id="slider-inicio" class="columns h-82-v p-0">
+<?php
 
-    <img src="http://fakeimg.pl/300?text=placeholder" alt="" />
+for ($i=0; $i < 4; $i++):
+  ?>
 
+
+    <div class="columns slider h-100 m0 imgLiquid imgLiquidFill">
+
+      <img src="http://fakeimg.pl/300?text=placeholder" alt="" />
+
+    </div>
+
+
+
+  <?php
+endfor;
+?>
   </div>
 
-</div>
+
 
 
 
@@ -77,4 +90,4 @@ include_once "secciones/compartidas/header.php";
 
 include_once "secciones/compartidas/footer.php";
 
- ?>
+?>

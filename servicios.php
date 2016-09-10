@@ -1,6 +1,6 @@
 <?php
 
-include_once "/secciones/compartidas/header.php"
+include_once "secciones/compartidas/header.php";
 
  ?>
     <!-- Services -->
@@ -112,6 +112,6 @@ include_once "/secciones/compartidas/header.php"
 
 <?php
 
-include_once "/secciones/compartidas/footer.php"
+include_once "secciones/compartidas/footer.php";
 
  ?>

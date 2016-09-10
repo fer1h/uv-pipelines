@@ -5,8 +5,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UVPIPELINES - Inicio</title>
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/style_utils.css">
+  <!-- <link rel="stylesheet" href="css/style_utils.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
@@ -21,7 +23,7 @@
   ?>
 
   <!-- Header movil-->
-  <header id="uv-header-movil" class="columns h-15-v hide-for-large">
+  <header id="uv-header-movil" class="columns h-15-v hide-for-large color-blanco-bg shadow fixed top left z1k1">
 
     <div id="img-logo-movil" class="columns small-6 medium-4 h-100 p-0 imgLiquid imgLiquidNoFill">
 
@@ -91,4 +93,4 @@
 
 
 
-  <main id="main" class="colums p-0 h-a" >
+  <main id="main" class="colums p-0 main-padding-top" >

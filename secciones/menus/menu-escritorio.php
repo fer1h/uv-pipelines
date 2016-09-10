@@ -1,9 +1,9 @@
 
       <div id="menu-home" class="menu h-100">
-        <ul class="columns large-10 h-100 nav-white">
-          <li class="columns large-3 p-0 h-100"><a href="index.php" class="columns h-a vcenter font-lg-S white">Home</a></li>
-          <li class="columns large-3 p-0 h-100"><a href="nosotro.php" class="columns h-a vcenter font-lg-S white">Acerca de nosotros</a></li>
-          <li class="columns large-3 p-0 h-100">
+        <ul class="columns large-10 h-100 nav-white text-left">
+          <li class="columns large-2 p-0 h-100"><a href="index.php" class="columns h-a vcenter font-lg-S white">Inicio</a></li>
+          <li class="columns large-2 p-0 h-100"><a href="nosotros.php" class="columns h-a vcenter font-lg-S white">Nosotros</a></li>
+          <li class="columns large-2 p-0 h-100">
 
             <a href="servicios.php" class="columns h-a vcenter font-lg-S white">Servicios</a>
 
@@ -76,7 +76,7 @@
 
           </li>
 
-          <li class="columns large-3 p-0 h-100 "><a href="contacto.php" class="columns h-a vcenter font-lg-S white">Contacto</a></li>
+          <li class="columns large-2 p-0 h-100 end"><a href="contacto.php" class="columns h-a vcenter font-lg-S white">Contacto</a></li>
 
         </ul>
         <!-- termina lista menu escritorio -->

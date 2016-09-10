@@ -1,7 +1,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="columns p-0 h-5-v font-sm-S font-md-M font-lg-L fixed bottom left white color-negro-bg">
+<footer class="columns p-0 h-5-v font-sm-S font-md-M font-lg-L white color-negro-bg">
 
   <div class="columns h-a vcenter text-center">
 
@@ -16,6 +16,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/what-input/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
 <script src="bower_components/imgLiquid/js/imgLiquid.js"></script>
 <script src="js/js_utils.js"></script>
 <script src="js/app.js"></script>

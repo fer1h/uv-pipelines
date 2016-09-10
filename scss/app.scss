@@ -78,6 +78,28 @@ $white: #ffffff;
 $black: #333333;
 $red: #fa1730;
 
+
+.main-padding-top {
+  padding-top: 15vh;
+}
+//quitalo por debajo de 1024px
+@media screen and (max-width:1024px) {
+  .main-padding-top {
+    padding-top: 0vh;
+  }
+
+}
+
+a:hover {
+color: $black;
+
+}
+
+// sombra
+.shadow {
+ box-shadow: 0 1px 5px;
+}
+
 //Background
 
 .color-negro-bg {
@@ -85,10 +107,20 @@ $red: #fa1730;
   background-color:$black;
 
 }
+.color-blanco-bg {
+
+  background-color:$white;
+
+}
 
 .color-rojo-bg{
 
   background-color:$red;
+
+}
+.color-rojo{
+
+  color:$red;
 
 }
 
@@ -164,6 +196,7 @@ $red: #fa1730;
   margin-bottom: 10px;
 }
 // menu-movil
+
 #bonoton-menu-movil {
 
   border: 0px !important;
@@ -182,4 +215,11 @@ $red: #fa1730;
 
   }
 
+}
+
+
+
+#menu-movil {
+  transition: 0.5s;
+  margin-top: 15vh;
 }
