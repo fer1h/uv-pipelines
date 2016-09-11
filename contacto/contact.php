@@ -1,14 +1,11 @@
 <?php
-
-include_once "secciones/compartidas/header.php";
-
 ####
 ## Form adaptado para foundation zurb
 ####
 //inicia sesion
 session_start();
 // Require the class
-require('contacto/formkey_class.php');
+require('formkey_class.php');
 // Start the class
 $formKey = new formKey();
 $error = False;
@@ -34,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 // };
 </script>
 <!-- Formulario  -->
-<form id="uvForm" method="POST" action="" class="columns small-12 medium-6 large-6 p2 end form-horizontal contact-form" data-abide novalidate>
+<form id="mbiForm" method="POST" action="" class="form-horizontal contact-form" data-abide novalidate>
 	<!--  -->
 	<?php $formKey->outputKey(); ?>
 	<!--  -->
@@ -65,7 +62,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 <textarea placeholder="Ingrese su mensaje" name="message" id="inputMessage" class="mb1" required></textarea>
 <!-- recaptcha v2  -->
 <div class="g-recaptcha" data-sitekey="6LdH0x0TAAAAAH3ZejIgppovJ-Uf9siidME__gF_"></div>
-<!-- <div id="captcha"></div> captcha explicit load-->
+<!-- <div id="captcha"></div> <!-- captcha explicit load-->
 <!--  -->
 <fieldset class="large-12 columns mt1 pl0">
 	<button id="boton_form" class="fondo_inputs m1 p3 white bold" type="submit" value="Send">Contáctanos</button>
@@ -78,19 +75,30 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 </div>
 </form>
 
-<div id="datos-contacto" class="columns h-100 small-12 medium-6 large-6 p3">
-
-	<div class="columns h-a vcenter text-center small-12 medium-6 large-6 p3">
-
-Datos de contacto
-
-
-	</div>
-
-</div>
-
-<?php
-
-include_once "secciones/compartidas/footer.php";
-
-?>
+<!-- requiere jquery -->
+<script>
+// $(function(){
+// agrega este codigo en el documento js, para no llamar jquery desde aqui
+//formulario
+//$("#mbiForm").submit(function() {
+//	if ($("#g-recaptcha-response").val()) {
+//		$.post('form/mail.php', {
+//			name: $('#inputName').val(),
+//			email: $('#inputEmail').val(),
+//			phone: $('#inputPhone').val(),
+//			type: $('#selectSubject').val(),
+//			message: $('#inputMessage').val(),
+//			captchaResponse: $('#g-recaptcha-response').val(),
+//			contactFormSubmitted: 'yes'},
+//			function(data) {
+//				$("#formResponse").html(data).fadeIn('2000');
+//			}, 'text');
+//			return false;
+//		} else {
+//			$("#formResponse").html('ERROR: llena el Captcha por favor.').fadeIn('2000');
+//			return false;
+//		}
+//	});
+//
+// });
+</script>

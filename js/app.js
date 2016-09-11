@@ -36,11 +36,8 @@ $(this).foundation();
       console.log('resize');
       if ($(this).width() >= 1024 && ! menumovil.hasClass('hidden')) {
         console.log('menor a 1024');
-
         menumovil.addClass('hidden');
-
       }
-
 
     });
     //
@@ -85,3 +82,28 @@ $(this).foundation();
       autoplaySpeed:5000
     });
   }
+
+
+function contacto() {
+
+  $("#uvForm").submit(function() {
+  	if ($("#g-recaptcha-response").val()) {
+  		$.post('form/mail.php', {
+  			name: $('#inputName').val(),
+  			email: $('#inputEmail').val(),
+  			phone: $('#inputPhone').val(),
+  			type: $('#selectSubject').val(),
+  			message: $('#inputMessage').val(),
+  			captchaResponse: $('#g-recaptcha-response').val(),
+  			contactFormSubmitted: 'yes'},
+  			function(data) {
+  				$("#formResponse").html(data).fadeIn('2000');
+  			}, 'text');
+  			return false;
+  		} else {
+  			$("#formResponse").html('ERROR: llena el Captcha por favor.').fadeIn('2000');
+  			return false;
+  		}
+  	});
+
+}
