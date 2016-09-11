@@ -91,13 +91,13 @@ $red: #fa1730;
 }
 
 a:hover {
-color: $black;
+  color: $black;
 
 }
 
 // sombra
 .shadow {
- box-shadow: 0 1px 5px;
+  box-shadow: 0 1px 5px;
 }
 
 //Background
@@ -161,14 +161,25 @@ color: $black;
 }
 
 .black-link{
-  color:$black;
+
+  &:hover {
+
+    color: $black;
+  }
+  color:$red;
   font-style: italic;
   font-size: 13px;
 }
 
 //Título de categorías
 .red-link-c{
-  color:$red;
+
+  &:hover {
+
+    color:$red;
+
+  }
+  color: $black;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 13px;
