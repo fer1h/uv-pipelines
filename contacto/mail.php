@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar
 {
 	var_dump($_POST); //muestra info sobre una variable
 
-	$secret = "6LdH0x0TAAAAAGj7PZNGgsdrmzJQXg2lH6ac8HAN";
+	$secret = "";//6LdH0x0TAAAAAGj7PZNGgsdrmzJQXg2lH6ac8HAN
 	// $rip = $_SERVER['REMOTE_ADDR'];
 	$captcha = $_POST['captchaResponse']; ##$_POST['g-recaptcha-response'] este era el pedo pff
 	$respuesta  = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");//&remoteip=$rip
@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar
 			// wordwrapped after 70 chracte? Words?
 			$message = wordwrap($formcontent, 70, "\r\n");
 			// Enter your email address
-			$recipient = "jazzvoon@gmail.com";//"info@mbiexecutivesearch.com";
+			$recipient = "fer@dothemath.mx";//"info@mbiexecutivesearch.com";
 			// Enter a subject, only you will see this so make it useful
 			$subject = "$name para $type";
 			// 'From' mail header
