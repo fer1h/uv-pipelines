@@ -33,6 +33,21 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 // 	});
 // };
 </script>
+
+<!-- Título ---------------------------------------->
+
+ <div id="título" class="columns h-20 p-0">
+   <div class="columns h-100 imgLiquid imgLiquidFill">
+     <img src="./img/titulo-servicios.png" alt=""/>
+     <div class="columns h-70 mt1 mb1  text-sm-center">
+       <p class="titulo-master">Contacto</p> <p class="titulo-master-2">Déjanos un comentario</p>
+     </div>
+   </div>
+ </div>
+
+ <!-- termina título ---------------------------------------->
+
+
 <!-- Formulario  -->
 <form id="uvForm" method="POST" action="" class="columns small-12 medium-6 large-6 p2 end form-horizontal contact-form" data-abide novalidate>
 	<!--  -->
@@ -82,7 +97,6 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 	<div class="columns h-a vcenter text-center small-12 medium-6 large-6 p3">
 
-Datos de contacto
 
 
 	</div>
