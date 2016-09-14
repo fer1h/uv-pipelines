@@ -27,9 +27,12 @@
 
     <div id="img-logo-movil" class="columns small-6 medium-4 h-100 p-0 imgLiquid imgLiquidNoFill">
 
+      <a href="index.php" class="columns h-100 m0 p0">
 
-      <img src="./img/logo.png" alt="" />
 
+        <img src="./img/logo.png" alt="" />
+
+      </a>
 
     </div>
 
@@ -64,8 +67,10 @@
     <div id="logo" class="columns p-0 h-55">
 
       <div id="img-logo" class="columns large-3 h-100 p-0 imgLiquid imgLiquidNoFill">
+        <a href="index.php" class="columns h-100 m0 p0">
 
-        <img src="./img/logo.png" alt="" />
+          <img src="./img/logo.png" alt="" />
+        </a>
 
       </div>
 

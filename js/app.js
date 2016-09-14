@@ -8,7 +8,7 @@ var menumovil = $('#menu-movil');
 // ready
 $(document).ready(function() {
 
-$(this).foundation();
+  $(this).foundation();
 
   u = new Utils();
 
@@ -31,7 +31,7 @@ $(this).foundation();
     });
 
 
-//
+    //
     $(window).resize(function() {
       console.log('resize');
       if ($(this).width() >= 1024 && ! menumovil.hasClass('hidden')) {
@@ -84,26 +84,41 @@ $(this).foundation();
   }
 
 
-function contacto() {
+  function contacto() {
 
-  $("#uvForm").submit(function() {
-  	if ($("#g-recaptcha-response").val()) {
-  		$.post('form/mail.php', {
-  			name: $('#inputName').val(),
-  			email: $('#inputEmail').val(),
-  			phone: $('#inputPhone').val(),
-  			type: $('#selectSubject').val(),
-  			message: $('#inputMessage').val(),
-  			captchaResponse: $('#g-recaptcha-response').val(),
-  			contactFormSubmitted: 'yes'},
-  			function(data) {
-  				$("#formResponse").html(data).fadeIn('2000');
-  			}, 'text');
-  			return false;
-  		} else {
-  			$("#formResponse").html('ERROR: llena el Captcha por favor.').fadeIn('2000');
-  			return false;
-  		}
-  	});
+    $("#uvForm").submit(function() {
+      if ($("#g-recaptcha-response").val()) {
+        $.post('form/mail.php', {
+          name: $('#inputName').val(),
+          email: $('#inputEmail').val(),
+          phone: $('#inputPhone').val(),
+          type: $('#selectSubject').val(),
+          message: $('#inputMessage').val(),
+          captchaResponse: $('#g-recaptcha-response').val(),
+          contactFormSubmitted: 'yes'},
+          function(data) {
+            $("#formResponse").html(data).fadeIn('2000');
+          }, 'text');
+          return false;
+        } else {
+          $("#formResponse").html('ERROR: llena el Captcha por favor.').fadeIn('2000');
+          return false;
+        }
+      });
 
-}
+    }
+
+
+    //conenido servicios
+    function jala_contenido(nombre) {
+
+      var url = 'servicios/' + nombre + '.html';
+      console.log(url);
+      $.get(url, function(data, status){
+        // alert("Data: " + data + "\nStatus: " + status);
+        $('#servicioContenido').html(data,status);
+      }).done(function() {
+    console.log(url + ' done');
+  });
+
+    }

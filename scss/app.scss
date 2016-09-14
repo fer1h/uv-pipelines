@@ -77,6 +77,7 @@ h3{font-weight: bold;
 $white: #ffffff;
 $black: #333333;
 $red: #fa1730;
+$redhover: #da0520;
 
 
 .main-padding-top {
@@ -92,6 +93,12 @@ $red: #fa1730;
 
 a:hover {
   color: $black;
+
+}
+
+.bordes-redondeados {
+
+  border-radius: 7px;
 
 }
 
@@ -121,6 +128,10 @@ a:hover {
 .color-rojo{
 
   color:$red;
+
+  &:hover {
+    color: $redhover;
+  }
 
 }
 
