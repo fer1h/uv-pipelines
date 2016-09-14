@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UVPIPELINES - Inicio</title>
+  <title>UV-PIPELINES</title>
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="css/app.css">
@@ -40,7 +40,7 @@
 
       <a class="columns button h-100 m0 p0">
 
-        <i class="fa fa-bars h-0 vcenter font-sm-L font-md-XL"></i>
+        <i class="fa fa-bars h-0 vcenter font-sm-XL font-md-XXL"></i>
 
       </a>
 
@@ -69,7 +69,7 @@
       <div id="img-logo" class="columns large-3 h-100 p-0 imgLiquid imgLiquidNoFill">
         <a href="index.php" class="columns h-100 m0 p0">
 
-          <img src="./img/logo.png" alt="" />
+          <img src="img/logo.png" alt="" />
         </a>
 
       </div>

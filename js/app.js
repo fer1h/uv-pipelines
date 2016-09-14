@@ -109,16 +109,21 @@ $(document).ready(function() {
     }
 
 
+
+    var tituloscategoria = ['Ingeniería & Certificación', 'Construcción ', 'Instrumentación y control'];
     //conenido servicios
-    function jala_contenido(nombre) {
+    function jala_contenido(nombre,index) {
 
       var url = 'servicios/' + nombre + '.html';
-      console.log(url);
+
       $.get(url, function(data, status){
         // alert("Data: " + data + "\nStatus: " + status);
-        $('#servicioContenido').html(data,status);
+        $('#servicioContenido').html(data).find('#main');
+
       }).done(function() {
-    console.log(url + ' done');
-  });
+        // 
+        $('.titulo-master').html(tituloscategoria[index]);
+
+      });
 
     }
