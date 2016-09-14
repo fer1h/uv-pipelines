@@ -58,7 +58,7 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 
 //
-// *{outline: 1px solid black}
+// {outline: 1px solid black}
 
 body,h1,h2,h3,h4{
 
@@ -91,7 +91,7 @@ $redhover: #da0520;
   .main-padding-top {
     padding-top: 0vh;
   }
-  
+
   #main .titulo {
     margin-top: 0vh;
   }
@@ -259,4 +259,11 @@ a:hover {
   transition: 0.5s;
   margin-top: 15vh;
   z-index: 1000;
+}
+
+.box-red {
+    background-color: #fa1730;
+    height: 36px;
+    width: 36px;
+    margin-top: 18px;
 }
