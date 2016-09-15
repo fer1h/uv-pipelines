@@ -78,6 +78,7 @@ $white: #ffffff;
 $black: #333333;
 $red: #fa1730;
 $redhover: #da0520;
+$gris: gray;
 
 
 .main-padding-top {
@@ -101,6 +102,11 @@ a:hover {
   color: gray;
 
 }
+
+.gris {
+  color: $gris;
+}
+
 
 .bordes-redondeados {
 
@@ -276,6 +282,6 @@ select {
 
 .box-red {
     background-color: #fa1730;
-    height: 36px;
-    width: 36px;
+    // height: 36px;
+    // width: 36px;
 }

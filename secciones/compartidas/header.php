@@ -76,11 +76,22 @@
       </div>
 
       <div id="img-hora" class="columns large-4 small-right h-100 p-0">
-      <div class="columns small-3 h-100">
-        <div class="small-12 box-red vcenter"><i class="fa fa-clock-o white h-100 w-100"></i></div>
-      </div>
-      <div class="clumns small-9 h-100">
-        <div class="small-12 vcenter">Lorem </br>  Ipsum</div>
+
+        <div class="columns large-2 h-100 p-0 text-center">
+          <!-- <div class="small-12  vcenter text-ctXXL> -->
+            <i class="fa fa-clock-o box-red white fontXXL text-center vcenter p1"></i>
+          <!-- </div> -->
+        </div>
+
+        <div class="columns large-8 h-100 p0 end">
+          <div class="columns vcenter h-a fontS p0 text-left">
+
+            <p class="columns p0 m0">Lorem ipsum dolor sit.</p>
+            <p class="columns p0 m0 gris"><small>Lorem ipsum dolor sit amet, elit. Unde, numquam?</small></p>
+
+          </div>
+        </div>
+
       </div>
 
     </div>
