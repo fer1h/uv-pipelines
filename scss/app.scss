@@ -81,20 +81,20 @@ $redhover: #da0520;
 
 
 .main-padding-top {
-  padding-top: 15vh;
+  padding-top: 0vh;
 }
 #main .titulo {
-  margin-top: 15vh;
+  margin-top: 0vh;
 }
 //quitalo por debajo de 1024px
 @media screen and (max-width:1024px) {
   .main-padding-top {
-    padding-top: 0vh;
+    padding-top: 15vh;
   }
 
-  #main .titulo {
-    margin-top: 0vh;
-  }
+  // #main .titulo {
+  //   margin-top: 15vh;
+  // }
 }
 
 a:hover {
@@ -141,6 +141,10 @@ a:hover {
 
 }
 
+select {
+  border: none;
+  @extend .shadow;
+}
 //Título Master
 .titulo-master{
   text-transform: uppercase;

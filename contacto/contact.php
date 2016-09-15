@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 // };
 </script>
 <!-- Formulario  -->
-<form id="mbiForm" method="POST" action="" class="form-horizontal contact-form p4" data-abide novalidate>
+<form id="mbiForm" method="POST" action="" class="form-horizontal contact-form p4 h-80" data-abide novalidate>
 	<!--  -->
 	<?php $formKey->outputKey(); ?>
 	<!--  -->
@@ -65,7 +65,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 <!-- <div id="captcha"></div> <!-- captcha explicit load-->
 <!--  -->
 <fieldset class="large-12 columns mt1 pl0">
-	<button id="boton_form" class="fondo_inputs m1 p3 white bold" type="submit" value="Send">Contáctanos</button>
+	<button id="boton_form" class="fondo_inputs m1 p3 black color-rojo-bg bordes-redondeados bold" type="submit" value="Enviar">Contáctanos</button>
 </fieldset>
 <!-- respuesta al enviar -->
 <p id="formResponse" class="success pt1"><?php #if($error) { echo($error); } ?></p>

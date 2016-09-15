@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   menu_movil();
   slider_inicio();
-
+  long_select();
 
   //reajuste en cambio de pantalla
   u.addWindowResizeFunction(
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
     $("#uvForm").submit(function() {
       if ($("#g-recaptcha-response").val()) {
-        $.post('form/mail.php', {
+        $.post('contacto/mail.php', {
           name: $('#inputName').val(),
           email: $('#inputEmail').val(),
           phone: $('#inputPhone').val(),
@@ -115,15 +115,36 @@ $(document).ready(function() {
     function jala_contenido(nombre,index) {
 
       var url = 'servicios/' + nombre + '.html';
+      var textoservicio;
+
 
       $.get(url, function(data, status){
-        // alert("Data: " + data + "\nStatus: " + status);
+        console.log("Data: " + data + "\nStatus: " + status);
         $('#servicioContenido').html(data).find('#main');
 
       }).done(function() {
-        // 
+        //
+
+        $('#servicios-opciones li a', 'selecto option').click(function() {
+          textoservicio = $(this).text();
+        alert(textoservicio);
+          $('.titulo-master-2').html(textoservicio);
+        });
+
+        // imprime titulos
         $('.titulo-master').html(tituloscategoria[index]);
 
       });
+
+    }
+
+
+    //longitud select
+    function long_select() {
+      //
+      // $('select option').each(function() {
+      //   var myStr = $(this).text();
+      //   if(myStr.length > 2 ){$(this).text(myStr.substring(4));}
+      // });
 
     }
