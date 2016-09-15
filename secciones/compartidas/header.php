@@ -75,7 +75,7 @@
       </div>
 
       <div id="img-hora" class="columns large-4 right h-100 p-0">
-        <div class="box-red"></div>
+        <div class="columns box-red"></div>
         <div class="columns">Lorem </br> Ipsum</div>
       </div>
 
