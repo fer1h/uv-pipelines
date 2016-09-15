@@ -7,11 +7,11 @@ include_once "secciones/compartidas/header.php";
 
 <!-- título ---------------------------------------->
 
-<div id="título" class="columns h-20 p-0">
+<div id="título" class="columns h-20 p-0 ">
   <div class="columns h-100 imgLiquid imgLiquidFill">
     <img src="img/titulo-servicios.png" alt=""/>
     <div class="columns h-70 mt1 mb1  text-sm-center">
-      <p class="titulo-master">SERVICIOS UV-PIPELINES</p> <p class="titulo-master-2">ELABORACIÓN, CERTIFICACIÓN DE INGENIERÍA & OWNER'S ENGINEERING</p>
+      <p class="titulo-master uppercase">UV-PIPELINES</p> <p class="titulo-master-2 uppercase">SERVICIOS</p>
     </div>
   </div>
 </div>
@@ -32,7 +32,7 @@ include_once "secciones/compartidas/header.php";
 
     <ul id="servicios-cats" class="menu vertical">
       <li>Ingeniería & Certificación
-        <ul class="nested vertical menu">
+        <ul id="servicios-opciones" class="nested vertical menu">
           <li><a onclick="jala_contenido('1-elaboracion-certificacion', 0)" class="black-link">Elaboración, certificación de ingeniería & owner's engineering</a></li>
           <li><a onclick="jala_contenido('2-unidades-verificacion', 0)" class="black-link">Unidades de verificación</a></li>
           <li><a onclick="jala_contenido('3-certificacion-seguridad', 0)" class="black-link">Certificación de seguridad técnica</a></li>
@@ -41,14 +41,14 @@ include_once "secciones/compartidas/header.php";
         </ul>
       </li>
       <li><a href="#" class="black-link-c">Construcción</a>
-        <ul class="nested vertical menu">
+        <ul id="servicios-opciones" class="nested vertical menu">
           <li><a onclick="jala_contenido('6-diseño-fabricacion', 1)" class="black-link">Diseño & fabricación</a></li>
-          <li><a onclick="jala_contenido('7-inspeccion-pruebas, 1')" class="black-link">Inspección & pruebas</a></li>
+          <li><a onclick="jala_contenido('7-inspeccion-pruebas', 1)" class="black-link">Inspección & pruebas</a></li>
           <li><a onclick="jala_contenido('8-soluciones-gas', 1)" class="black-link">Soluciones para el manejo y transporte de gas natural</a></li>
         </ul>
       </li>
       <li><a href="#" class="black-link-c">Instrumentación & control</a>
-        <ul class="nested vertical menu">
+        <ul id="servicios-opciones" class="nested vertical menu">
           <li><a onclick="jala_contenido('9-computadores', 2)" class="black-link">Computadores y medidores de flujo  para gas natural, combustibles refinados, agua potable y agua ratada</a></li>
           <li><a onclick="jala_contenido('10-sistema-control-carga', 2)" class="black-link">Sistemas de control de carga de combustibles refinados</a></li>
           <li><a onclick="jala_contenido('11-medidores', 2)" class="black-link">Medidores de flujo tipo ultrasónicos no intrusivos</a></li>
@@ -63,23 +63,23 @@ include_once "secciones/compartidas/header.php";
 
 </div>
 
-<!-- selector small -->
-<select class="columns h-11-v show-for-small show-for-medium hide-for-large" name="servicios">
-  <option value="uno" onclick="jala_contenido('2-unidades-verificacion', 0)" >Elaboración, certificación de ingeniería & owner's engineering</option>
-  <option value="uno" onclick="jala_contenido('15-servicio-config', 2)">Unidades de verificación</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="uno">1one</option>
-  <option value="dos">2one</option>
-  <option value="tres">3one</option>
-  <option value="cuatr">Equipos utilizados en la verificación de caudal</option>
+<!-- selector small y medium unicamente-->
+<select class="columns h-11-v show-for-small hide-for-large white color-rojo-bg font-sm-S font-md-M" name="servicios">
+  <option value="" onclick="jala_contenido('1-elaboracion-certificacion', 0)" >Elaboración, certificación de ingeniería & owner's engineering</option>
+  <option value="" onclick="jala_contenido('2-unidades-verificacion', 0)">Unidades de verificación</option>
+  <option value="" onclick="jala_contenido('3-certificacion-seguridad', 0)">Certificación de seguridad técnica</option>
+  <option value="" onclick="jala_contenido('4-Inspección', 0)" >Inspección - expeditación, supervisión/PMC</option>
+  <option value="" onclick="jala_contenido('5-consultoria', 0)" >Consultoría & entrenamiento</option>
+  <option value="" onclick="jala_contenido('6-diseño-fabricacion', 1)" >Diseño & fabricación</option>
+  <option value="" onclick="jala_contenido('7-inspeccion-pruebas, 1')" >Inspección & pruebas</option>
+  <option value="" onclick="jala_contenido('8-soluciones-gas', 1)" >Soluciones para el manejo y transporte de gas natural</option>
+  <option value="" onclick="jala_contenido('9-computadores', 2)" >Computadores y medidores de flujo para gas natural, combustibles refinados y aguas</option>
+  <option value="" onclick="jala_contenido('10-sistema-control-carga', 2)" >Sistemas de control de carga de combustibles refinados</option>
+  <option value="" onclick="jala_contenido('11-medidores', 2)" >Medidores de flujo tipo ultrasónicos no intrusivos</option>
+  <option value="" onclick="jala_contenido('12-sistema-medicion', 2)" >Sistemas de medición de flujo en canales abiertos</option>
+  <option value="" onclick="jala_contenido('13-servicio-verificacion-aforo', 2)" >Servicios de verificación y aforo</option>
+  <option value="" onclick="jala_contenido('14-servicio-verificacion-aforo copia', 2)" >Objetivos del servicio de verificación y aforo</option>
+  <option value="" onclick="jala_contenido('15-servicio-config', 2)" >Equipos utilizados en la verificación de caudal</option>
 </select>
 
 

@@ -5,6 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UV-PIPELINES</title>
+  <link rel=icon href=img/favicon.png sizes="32x32" type="image/png">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="css/app.css">
@@ -74,9 +75,12 @@
 
       </div>
 
-      <div id="img-hora" class="columns large-4 right h-100 p-0">
-        <div class="columns box-red"></div>
-        <div class="columns">Lorem </br> Ipsum</div>
+      <div id="img-hora" class="columns large-4 small-right h-100 p-0">
+      <div class="columns small-3 h-100">
+        <div class="small-12 box-red vcenter"><i class="fa fa-clock-o white h-100 w-100"></i></div>
+      </div>
+      <div class="clumns small-9 h-100">
+        <div class="small-12 vcenter">Lorem </br>  Ipsum</div>
       </div>
 
     </div>

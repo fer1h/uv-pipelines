@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 // };
 </script>
 <!-- Formulario  -->
-<form id="mbiForm" method="POST" action="" class="form-horizontal contact-form" data-abide novalidate>
+<form id="mbiForm" method="POST" action="" class="form-horizontal contact-form p4 h-80" data-abide novalidate>
 	<!--  -->
 	<?php $formKey->outputKey(); ?>
 	<!--  -->
@@ -61,11 +61,11 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 <small class="error hidden">Se requiere mensaje.</small>
 <textarea placeholder="Ingrese su mensaje" name="message" id="inputMessage" class="mb1" required></textarea>
 <!-- recaptcha v2  -->
-<div class="g-recaptcha" data-sitekey="6LdH0x0TAAAAAH3ZejIgppovJ-Uf9siidME__gF_"></div>
+<div class="g-recaptcha" data-sitekey="6LeyLCoTAAAAAGUwn9D0Ts7ie6cfPpHCBT-whHn-"></div>
 <!-- <div id="captcha"></div> <!-- captcha explicit load-->
 <!--  -->
 <fieldset class="large-12 columns mt1 pl0">
-	<button id="boton_form" class="fondo_inputs m1 p3 white bold" type="submit" value="Send">Contáctanos</button>
+	<button id="boton_form" class="fondo_inputs m1 p3 black color-rojo-bg bordes-redondeados bold" type="submit" value="Enviar">Contáctanos</button>
 </fieldset>
 <!-- respuesta al enviar -->
 <p id="formResponse" class="success pt1"><?php #if($error) { echo($error); } ?></p>
@@ -74,31 +74,3 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 	<p class="warning small_font"><i class="fa fa-alert"></i> Hay algunos errores, faltan campos obligatorios.</p>
 </div>
 </form>
-
-<!-- requiere jquery -->
-<script>
-// $(function(){
-// agrega este codigo en el documento js, para no llamar jquery desde aqui
-//formulario
-//$("#mbiForm").submit(function() {
-//	if ($("#g-recaptcha-response").val()) {
-//		$.post('form/mail.php', {
-//			name: $('#inputName').val(),
-//			email: $('#inputEmail').val(),
-//			phone: $('#inputPhone').val(),
-//			type: $('#selectSubject').val(),
-//			message: $('#inputMessage').val(),
-//			captchaResponse: $('#g-recaptcha-response').val(),
-//			contactFormSubmitted: 'yes'},
-//			function(data) {
-//				$("#formResponse").html(data).fadeIn('2000');
-//			}, 'text');
-//			return false;
-//		} else {
-//			$("#formResponse").html('ERROR: llena el Captcha por favor.').fadeIn('2000');
-//			return false;
-//		}
-//	});
-//
-// });
-</script>

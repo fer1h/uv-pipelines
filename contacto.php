@@ -36,28 +36,28 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 <!-- Título ---------------------------------------->
 
- <div id="título" class="columns h-20 p-0">
-   <div class="columns h-100 imgLiquid imgLiquidFill">
-     <img src="./img/titulo-servicios.png" alt=""/>
-     <div class="columns h-70 mt1 mb1  text-sm-center">
-       <p class="titulo-master">Contacto</p> <p class="titulo-master-2">Déjanos un comentario</p>
-     </div>
-   </div>
- </div>
+<div id="título" class="columns h-20 p-0">
+	<div class="columns h-100 imgLiquid imgLiquidFill">
+		<img src="./img/titulo-servicios.png" alt=""/>
+		<div class="columns h-70 mt1 mb1  text-sm-center">
+			<p class="titulo-master">Contacto</p> <p class="titulo-master-2">Déjanos un comentario</p>
+		</div>
+	</div>
+</div>
 
- <!-- termina título ---------------------------------------->
+<!-- termina título ---------------------------------------->
 
 
 <!-- Formulario  -->
-<form id="uvForm" method="POST" action="" class="columns small-12 medium-6 large-6 p2 end form-horizontal contact-form" data-abide novalidate>
+<form id="uvForm" method="POST" action="" class="columns small-12 medium-6 large-6 p4 end form-horizontal contact-form" data-abide novalidate>
 	<!--  -->
 	<?php $formKey->outputKey(); ?>
 	<!--  -->
-	<label class="white">Nombre *</label>
+	<label class="black">Nombre *</label>
 	<small class="error hidden">Nombre requerido.</small>
 	<input type="text" placeholder="Nombre completo" name="name" aria-describedby="" id="inputName" required>
 	<!--  -->
-	<label class="white">Correo *</label>
+	<label class="black">Correo *</label>
 	<small class="error hidden">Correo requerido.</small>
 	<input type="email" placeholder="dev@company.com" name="email" id="inputEmail" required>
 	<!-- para usar telefono -->
@@ -65,7 +65,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 	<small class="error hidden">Teléfono minimo 11 digitos.</small>
 	<input name="phone" type="text" id="inputPhone" placeholder="# País + Código de área"> -->
 	<!--  -->
-	<label class="white">Asunto *</label>
+	<label class="black">Asunto *</label>
 	<small class="error hidden">Asunto requerido.</small>
 	<input id="selectSubject" name="type" type="text" placeholder="Asunto" required>
 	<!-- alternativa con option -->
@@ -75,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 	<option value="misc">Comentarios</option>
 </select> -->
 <!--  -->
-<label class="white">Mensaje *</label>
+<label class="black">Mensaje *</label>
 <small class="error hidden">Se requiere mensaje.</small>
 <textarea placeholder="Ingrese su mensaje" name="message" id="inputMessage" class="mb1" required></textarea>
 <!-- recaptcha v2  -->
@@ -83,12 +83,12 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 <!-- <div id="captcha"></div> captcha explicit load-->
 <!--  -->
 <fieldset class="large-12 columns mt1 pl0">
-	<button id="boton_form" class="fondo_inputs m1 p3 white bold" type="submit" value="Send">Contáctanos</button>
+	<button id="boton_form" class="fondo_inputs m1 p3 white color-rojo-bg bordes-redondeados bold" type="submit" value="Send">Contáctanos</button>
 </fieldset>
 <!-- respuesta al enviar -->
-<p id="formResponse" class="success pt1"><?php #if($error) { echo($error); } ?></p>
-<p id="mensaje_res" class="success pt1 small_font color_gris" style="display: none;"><i class="fa fa-success"></i></p>
-<div data-abide-error class="alert callout" style="display: none;">
+<p id="formResponse" class="columns success pt1"><?php #if($error) { echo($error); } ?></p>
+<p id="mensaje_res" class="columns success pt1 small_font color_gris" style="display: none;"><i class="fa fa-success"></i></p>
+<div data-abide-error class="columns alert callout" style="display: none;">
 	<p class="warning small_font"><i class="fa fa-alert"></i> Hay algunos errores, faltan campos obligatorios.</p>
 </div>
 </form>
