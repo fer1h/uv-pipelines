@@ -98,7 +98,7 @@ $redhover: #da0520;
 }
 
 a:hover {
-  color: $black;
+  color: gray;
 
 }
 
@@ -257,7 +257,16 @@ select {
 
 }
 
+// menu escritorio
+#menu-home ul li:nth-child(3):hover {
 
+   ul#sublista-menu {
+
+      display: block;
+
+  }
+
+}
 
 #menu-movil {
   transition: 0.5s;

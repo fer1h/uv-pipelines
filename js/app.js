@@ -109,31 +109,35 @@ $(document).ready(function() {
     }
 
 
+    //conenido servicios
 
     var tituloscategoria = ['Ingeniería & Certificación', 'Construcción ', 'Instrumentación y control'];
-    //conenido servicios
+    var textoservicio;
+
+    $('select option').on('click',function() {
+      textoservicio = $(this).text();
+      $('.titulo-master-2').html(textoservicio);
+    });
+
+    $('#servicios-opciones li a').on('click',function() {
+      textoservicio = $(this).text();
+      $('.titulo-master-2').html(textoservicio);
+    });
+
     function jala_contenido(nombre,index) {
 
       var url = 'servicios/' + nombre + '.html';
-      var textoservicio;
+      $.ajax({
 
-
-      $.get(url, function(data, status){
-        console.log("Data: " + data + "\nStatus: " + status);
-        $('#servicioContenido').html(data).find('#main');
-
+        url: url,
+        cache: false,
+        success: function(data, status){
+          // console.log("Data: " + data + "\nStatus: " + status);
+          $('#servicioContenido').html(data).find('#main');
+        }
       }).done(function() {
-        //
-
-        $('#servicios-opciones li a', 'selecto option').click(function() {
-          textoservicio = $(this).text();
-        alert(textoservicio);
-          $('.titulo-master-2').html(textoservicio);
-        });
-
-        // imprime titulos
+        // imprime titulo
         $('.titulo-master').html(tituloscategoria[index]);
-
       });
 
     }
