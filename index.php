@@ -40,7 +40,7 @@ $textoslider = array(
            <h1 class="columns bold uppercase font-sm-L font-md-XL font-lg-XXXL"><?php echo $textoslider['textoslider' . $i]['copyslider' . $i];?></h1>
            <div class="columns h-a color-rojo-bd small-4 medium-4 large-4"></div>
            <h5 class="columns font-sm-S font-md-M font-lg-L"><?php echo $textoslider['textoslider' . $i]['bottomslider' . $i];?></h5>
-           <button href="contacto.php" class="pl3 pr3 pt1 pb1 mt2 bordes-redondeados color-rojo-bg color-white end"><?php echo$textoslider['textoslider' . $i]['botoncontacto' . $i];?></button>
+           <button href="contacto.php" class="columns small-3 text-center pt1 pb1 mt2 font-sm-S font-md-M font-lg-L bordes-redondeados color-rojo-bg color-white end"><?php echo$textoslider['textoslider' . $i]['botoncontacto' . $i];?></button>
          </div>
 
       </div>

@@ -1,7 +1,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="columns p-0 h-5-v font-sm-S font-md-M font-lg-L white color-negro-bg">
+<footer class="columns p-0 h-4-v font-sm-XS font-md-S font-lg-L white color-negro-bg fixed bottom left">
 
   <div class="columns h-a vcenter text-center">
 

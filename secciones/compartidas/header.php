@@ -41,7 +41,7 @@
 
       <a class="columns button h-100 m0 p0">
 
-        <i class="fa fa-bars h-0 vcenter font-sm-XL font-md-XXL"></i>
+        <i class="fa fa-bars h-0 vcenter font-sm-XL font-md-XL"></i>
 
       </a>
 
