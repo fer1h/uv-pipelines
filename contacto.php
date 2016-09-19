@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 	<?php $formKey->outputKey(); ?>
 
 	<!-- respuesta al enviar -->
-	<p id="formResponse" class="columns success pt1 bold font-sm-M font-md-L font-lg-L"><?php if($error) { echo($error); } ?></p>
+	<p id="formResponse" class="columns success pt1 bold font-sm-M font-md-L font-lg-L"><?php //if($error) { echo($error); } ?></p>
 	<p id="mensaje_res" class="columns secondary pt1 font-sm-M font-md-L font-lg-L" style="display: none;"><i class="fa fa-success"></i></p>
 	<div data-abide-error class="columns alert callout" style="display: none;">
 		<p class="warning font-sm-M font-md-L font-lg-"><i class="fa fa-alert"></i> Hay algunos errores, faltan campos obligatorios.</p>
@@ -76,16 +76,19 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 </form>
 
-<div id="datos-contacto" class="columns h-100 small-12 medium-6 large-6 p3">
+<div id="datos-contacto" class="columns h-60-v small-12 medium-6 large-6 p2">
 
-	<div class="columns h-a vcenter text-center small-12 medium-6 large-6 p3">
+	<div class="columns small-11 medium-10 large-10 h-a vcenter text-left p2 small-centered">
 
-<div class="columns small-12"><i class="fa fa-home"></i></div>
-<br>
-<div class="columns small-12"><i class="fa fa-envelope"></i></div>
-<br>
-<div class="columns small-12"><i class="fa fa-phone"></i></div>
-<br>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+		<br>
+		<br>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-envelope"></i> lorem@loremipsum.com</div>
+		<br>
+		<br>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-phone"></i> 55 55 555 555555</div>
+		<br>
+		<br>
 
 	</div>
 

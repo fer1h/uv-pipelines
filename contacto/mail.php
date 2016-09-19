@@ -1,22 +1,19 @@
 <?php
 
 
-if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar mas tarde
-{
-	var_dump($_POST); //muestra info sobre una variable
+if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 	$secret = "6LeyLCoTAAAAAI-PhXvvJmPVwnBghKdloHek_ZjH";
-	// $rip = $_SERVER['REMOTE_ADDR'];
+
 	$captcha = $_POST['captchaResponse']; ##$_POST['g-recaptcha-response'] este era el pedo pff
+
 	$respuesta  = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");//&remoteip=$rip
-	var_dump($respuesta);
+
 	$respuesta = json_decode($respuesta,true);
+
 	//booleano para captcha
 	if( $respuesta['success'] === true) {
-		// echo "El correo se ha enviado exitosamente, gracias."; //debug
-		// echo $respuesta; //debug
-		// empieza booleando para enviar mail
-		// echo "<script>$('#mensaje_res').html('El correo se ha enviado exitosamente, gracias.'); </script>";
+
 		if(isset($_POST['contactFormSubmitted'])) {
 			// Formulario data
 			$name = $_POST['name'];
@@ -27,15 +24,14 @@ if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar
 
 			// check length of name, email and message
 			if (strlen($name) < 3 || strlen($message) < 20) {
-				// echo "<script>javascript:Recaptcha.reload();</script>"; // reload the captcha
-				exit("Necesitamos más caracteres."); // exit program, return message
+				exit("Necesitamos más caracteres para enviar el mensaje."); //
 			}
 			// Contenido de correo
 			$formcontent="Te están contactando desde tu sitio\n\nDe parte: $name\n\nCorreo: $email\n\nAsunto: $type\n\nMensaje: $message";
 			// wordwrapped after 70 chracte? Words?
 			$message = wordwrap($formcontent, 70, "\r\n");
 			// Enter your email address
-			$recipient = "fer@dothemath.mx, josecaos@gmail.com";//
+			$recipient = "fer@dothemath.mx, josecaos@dothemath.mx";//
 			// Enter a subject, only you will see this so make it useful
 			$subject = "$name para $type";
 			// 'From' mail header
