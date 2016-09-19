@@ -31,11 +31,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar
 				exit("Necesitamos más caracteres."); // exit program, return message
 			}
 			// Contenido de correo
-			$formcontent="Te están contactando desde tu sitio\n\nDe parte: $name\n\nCorreo: $email\n\nTel: $phone\n\nAsunto: $type\n\nMensaje: $message";
+			$formcontent="Te están contactando desde tu sitio\n\nDe parte: $name\n\nCorreo: $email\n\nAsunto: $type\n\nMensaje: $message";
 			// wordwrapped after 70 chracte? Words?
 			$message = wordwrap($formcontent, 70, "\r\n");
 			// Enter your email address
-			$recipient = "fer@dothemath.mx";//
+			$recipient = "fer@dothemath.mx, josecaos@gmail.com";//
 			// Enter a subject, only you will see this so make it useful
 			$subject = "$name para $type";
 			// 'From' mail header
@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar
 			// Send email, if something goes wrong, kill programm and return error message
 			mail($recipient, $subject, $message, $mailheader) or die("El correo no se há enviado, algo salió mal intenta de nuevo.");
 			// If all's well, return success message
-			echo "<script>$('#formResponse').html('Gracias! Tu mensaje se ha enviado te contactaremos en breve te contactaremos.'); </script>";
+			echo "<script>$('#formResponse').html('Gracias! Tu mensaje se ha enviado en breve te contactaremos.'); </script>";
 			// ...and clear the message box and reload captcha
 			// echo "<script>$('#inputMessage').val(''); </script>"; //javascript:Recaptcha.reload();
 		}

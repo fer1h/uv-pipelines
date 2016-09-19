@@ -1,6 +1,6 @@
 // vars
 var u;
-var barras =$('#bonoton-menu-movil a i');
+var barras = $('#bonoton-menu-movil a i');
 var menumovil = $('#menu-movil');
 
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   menu_movil();
   slider_inicio();
-  long_select();
+  contacto();
 
   //reajuste en cambio de pantalla
   u.addWindowResizeFunction(
@@ -87,7 +87,9 @@ $(document).ready(function() {
   function contacto() {
 
     $("#uvForm").submit(function() {
+
       if ($("#g-recaptcha-response").val()) {
+
         $.post('contacto/mail.php', {
           name: $('#inputName').val(),
           email: $('#inputEmail').val(),
@@ -96,12 +98,15 @@ $(document).ready(function() {
           message: $('#inputMessage').val(),
           captchaResponse: $('#g-recaptcha-response').val(),
           contactFormSubmitted: 'yes'},
+
           function(data) {
             $("#formResponse").html(data).fadeIn('2000');
           }, 'text');
           return false;
+
         } else {
-          $("#formResponse").html('ERROR: llena el Captcha por favor.').fadeIn('2000');
+
+          $("#formResponse").html('ERROR: Llena el Captcha por favor.').fadeIn('2000');
           return false;
         }
       });
@@ -139,16 +144,5 @@ $(document).ready(function() {
         // imprime titulo
         $('.titulo-master').html(tituloscategoria[index]);
       });
-
-    }
-
-
-    //longitud select
-    function long_select() {
-      //
-      // $('select option').each(function() {
-      //   var myStr = $(this).text();
-      //   if(myStr.length > 2 ){$(this).text(myStr.substring(4));}
-      // });
 
     }
