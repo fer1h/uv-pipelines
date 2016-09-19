@@ -59,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 	<!--  -->
 	<label class="black">Correo *</label>
 	<small class="error hidden">Correo requerido.</small>
-	<input type="email" placeholder="dev@company.com" name="email" id="inputEmail" required>
+	<input type="email" placeholder="dev@empresa.com" name="email" id="inputEmail" required>
 	<!-- para usar telefono -->
 	<!-- <label class="white">Telefono *</label>
 	<small class="error hidden">Teléfono minimo 11 digitos.</small>
@@ -79,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 <small class="error hidden">Se requiere mensaje.</small>
 <textarea placeholder="Ingrese su mensaje" name="message" id="inputMessage" class="mb1" required></textarea>
 <!-- recaptcha v2  -->
-<div class="g-recaptcha" data-sitekey="6LdH0x0TAAAAAH3ZejIgppovJ-Uf9siidME__gF_"></div>
+<div class="g-recaptcha" data-sitekey="6LeyLCoTAAAAAGUwn9D0Ts7ie6cfPpHCBT-whHn-"></div>
 <!-- <div id="captcha"></div> captcha explicit load-->
 <!--  -->
 <fieldset class="large-12 columns mt1 pl0">

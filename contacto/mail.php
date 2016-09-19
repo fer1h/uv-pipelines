@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") // comentado por seguridad descomentar
 {
 	var_dump($_POST); //muestra info sobre una variable
 
-	$secret = "	6LeyLCoTAAAAAI-PhXvvJmPVwnBghKdloHek_ZjH";
+	$secret = "6LeyLCoTAAAAAI-PhXvvJmPVwnBghKdloHek_ZjH";
 	// $rip = $_SERVER['REMOTE_ADDR'];
 	$captcha = $_POST['captchaResponse']; ##$_POST['g-recaptcha-response'] este era el pedo pff
 	$respuesta  = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");//&remoteip=$rip

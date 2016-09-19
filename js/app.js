@@ -114,12 +114,12 @@ $(document).ready(function() {
     var tituloscategoria = ['Ingeniería & Certificación', 'Construcción ', 'Instrumentación y control'];
     var textoservicio;
 
-    $('select option').on('click',function() {
+    $('select option').on('touchstart click',function() {
       textoservicio = $(this).text();
       $('.titulo-master-2').html(textoservicio);
     });
 
-    $('#servicios-opciones li a').on('click',function() {
+    $('#servicios-opciones li a').on('touchstart click',function() {
       textoservicio = $(this).text();
       $('.titulo-master-2').html(textoservicio);
     });
