@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 
 <!-- Formulario  -->
-<form id="uvForm" method="POST" action="" class="columns small-12 medium-6 large-6 p4 end form-horizontal contact-form" data-abide novalidate>
+<form id="uvForm" method="POST" action="" class="columns small-12 medium-6 large-6 mb1 p4 end form-horizontal contact-form" data-abide novalidate>
 	<!--  -->
 	<?php $formKey->outputKey(); ?>
 
@@ -76,17 +76,17 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 </form>
 
-<div id="datos-contacto" class="columns h-60-v small-12 medium-6 large-6 p2">
+<div id="datos-contacto" class="columns h-sm-50vh h-md-60vh h-lg-60vh small-12 medium-6 large-6 p2">
 
 	<div class="columns small-11 medium-10 large-10 h-a vcenter text-left p2 small-centered">
 
-		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
 		<br>
 		<br>
-		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-envelope"></i> lorem@loremipsum.com</div>
+		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-envelope"></i><a href="mailto:fer@dothemath.mx"> lorem@loremipsum.com</a></div>
 		<br>
 		<br>
-		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-phone"></i> 55 55 555 555555</div>
+		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-phone"></i><a href="tel:0445555555555"> 55 55 555 555555</a></div>
 		<br>
 		<br>
 
