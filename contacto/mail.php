@@ -27,11 +27,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				exit("Necesitamos más caracteres para enviar el mensaje."); //
 			}
 			// Contenido de correo
-			$formcontent="Te están contactando desde tu sitio\n\nDe parte: $name\n\nCorreo: $email\n\nAsunto: $type\n\nMensaje: $message";
+			$formcontent="Te están contactando desde el sitio uvpipelines.com\n\nDe parte: $name\n\nCorreo: $email\n\nAsunto: $type\n\nMensaje: $message";
 			// wordwrapped after 70 chracte? Words?
 			$message = wordwrap($formcontent, 70, "\r\n");
 			// Enter your email address
-			$recipient = "fer@dothemath.mx, josecaos@dothemath.mx";//
+			$recipient = "josecaos@dothemath.mx";//
 			// Enter a subject, only you will see this so make it useful
 			$subject = "$name para $type";
 			// 'From' mail header

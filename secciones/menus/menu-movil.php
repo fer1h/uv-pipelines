@@ -1,5 +1,5 @@
 
-<nav id="menu-movil" class="small-12 medium-6 menu h-85-v fixed top left color-rojo-bg hidden" style="opacity:0">
+<nav id="menu-movil" class="small-12 medium-6 menu h-85-v fixed top left color-rojo-bg hidden opaco" style="opacity:0">
 
 
   <ul class="columns h-60 nav-white">

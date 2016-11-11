@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 	<div class="columns h-100 imgLiquid imgLiquidFill">
 		<img src="./img/titulo-servicios.png" alt=""/>
 		<div class="columns h-70 mt1 mb1  text-sm-center">
-			<p class="titulo-master">Contacto</p> <p class="titulo-master-2">Déjanos un comentario</p>
+			<p class="titulo-master">Contacto</p> <p class="titulo-master-2">Escríbenos directamente desde aquí.</p>
 		</div>
 	</div>
 </div>
@@ -80,13 +80,13 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 	<div class="columns small-11 medium-10 large-10 h-a vcenter text-left p2 small-centered">
 
-		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
 		<br>
 		<br>
-		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-envelope"></i><a href="mailto:fer@dothemath.mx"> lorem@loremipsum.com</a></div>
+		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-envelope"></i><a href="mailto:fer@dothemath.mx"> lorem@loremipsum.com</a></div>
 		<br>
 		<br>
-		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-XL"><i class="font-sm-M font-md-L font-lg-XL fa fa-phone"></i><a href="tel:0445555555555"> 55 55 555 555555</a></div>
+		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-phone"></i><a href="tel:0445555555555"> 55 55 555 555555</a></div>
 		<br>
 		<br>
 

@@ -24,24 +24,24 @@
   ?>
 
   <!-- Header movil-->
-  <header id="uv-header-movil" class="columns h-15-v hide-for-large color-blanco-bg shadow fixed top left z1k1">
+  <header id="uv-header-movil" class="columns h-15-v hide-for-large color-blanco-bg shadow-black fixed top left z1k1">
 
     <div id="img-logo-movil" class="columns small-6 medium-4 h-100 p-0 imgLiquid imgLiquidNoFill">
 
       <a href="index.php" class="columns h-100 m0 p0">
 
 
-        <img src="./img/logo.png" alt="" />
+        <img src="img/logo.png" alt="" />
 
       </a>
 
     </div>
 
-    <div id="bonoton-menu-movil" class="columns small-2 medium-2 right text-center">
+    <div id="boton-menu-movil" class="columns small-2 medium-2 right text-center">
 
       <a class="columns button h-100 m0 p0">
 
-        <i class="fa fa-bars h-0 vcenter font-sm-XL font-md-XL"></i>
+        <i class="fa fa-bars h-0 vcenter font-sm-XL font-md-XL rota"></i>
 
       </a>
 

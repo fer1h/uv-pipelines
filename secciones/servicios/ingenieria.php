@@ -40,7 +40,7 @@ include_once "secciones/compartidas/header.php";
           <li><a onclick="jala_contenido('5-consultoria', 0)" class="black-link">Consultoría & entrenamiento</a></li>
         </ul>
       </li>
-      <li><a href="#" class="black-link-c">Construcción</a>
+      <!-- <li><a href="#" class="black-link-c">Construcción</a>
         <ul id="servicios-opciones" class="nested vertical menu">
           <li><a onclick="jala_contenido('6-diseño-fabricacion', 1)" class="black-link">Diseño & fabricación</a></li>
           <li><a onclick="jala_contenido('7-inspeccion-pruebas', 1)" class="black-link">Inspección & pruebas</a></li>
@@ -57,7 +57,7 @@ include_once "secciones/compartidas/header.php";
           <li><a onclick="jala_contenido('14-servicio-verificacion-aforo copia', 2)" class="black-link">Objetivos del servicio de verificación y aforo</a></li>
           <li><a onclick="jala_contenido('15-servicio-config', 2)" class="black-link">Equipos utilizados en la verificación de caudal</a></li>
         </ul>
-      </li>
+      </li> -->
     </ul>
   </div>
 
@@ -70,7 +70,7 @@ include_once "secciones/compartidas/header.php";
   <option value="3-certificacion-seguridad">Certificación de seguridad técnica</option>
   <option value="4-Inspección">Inspección - expeditación, supervisión/PMC</option>
   <option value="5-consultoria">Consultoría & entrenamiento</option>
-  <option value="6-diseño-fabricacion">Diseño & fabricación</option>
+  <!-- <option value="6-diseño-fabricacion">Diseño & fabricación</option>
   <option value="7-inspeccion-pruebas">Inspección & pruebas</option>
   <option value="8-soluciones-gas">Soluciones para el manejo y transporte de gas natural</option>
   <option value="9-computadores">Computadores y medidores de flujo para gas natural, combustibles refinados y aguas</option>
@@ -79,7 +79,7 @@ include_once "secciones/compartidas/header.php";
   <option value="12-sistema-medicion">Sistemas de medición de flujo en canales abiertos</option>
   <option value="13-servicio-verificacion-aforo">Servicios de verificación y aforo</option>
   <option value="14-servicio-verificacion-aforo copia">Objetivos del servicio de verificación y aforo</option>
-  <option value="15-servicio-config">Equipos utilizados en la verificación de caudal</option>
+  <option value="15-servicio-config">Equipos utilizados en la verificación de caudal</option> -->
 </select>
 
 
@@ -89,7 +89,7 @@ include_once "secciones/compartidas/header.php";
 
 <div id="servicioContenido" class="columns small-12 large-8 h-a">
 
-  <div class="columns p-1 h-65-v imgLiquid imgLiquidFill">
+  <!-- <div class="columns p-1 h-65-v imgLiquid imgLiquidFill">
     <img src="img/1.png" alt="" />
   </div>
   <div class="columns p-1">
@@ -114,9 +114,10 @@ include_once "secciones/compartidas/header.php";
   <li>Estaciones de Compresión y Bombeo</li>
   <li>Estaciones de Regulación, Medición y Control</li>
 </ul>
-</div>
+</div> -->
 </div>
 
+<button href="contacto.php" onclick="link_servicios()" class="columns small-12 text-center pt2 pb2 mt1 font-sm-M font-md-L font-lg-XL bordes-redondeados color-rojo-bg color-white">Ver todos los servicios</button>
 
 
 </div>

@@ -64,22 +64,22 @@ include_once "secciones/compartidas/header.php";
 </div>
 
 <!-- selector small y medium unicamente-->
-<select id="select-servicios-movil" class="columns h-11-v show-for-small hide-for-large white color-rojo-bg font-sm-S font-md-M" name="servicios">
-  <option value="1-elaboracion-certificacion">Elaboración, certificación de ingeniería & owner's engineering</option>
-  <option value="2-unidades-verificacion">Unidades de verificación</option>
-  <option value="3-certificacion-seguridad">Certificación de seguridad técnica</option>
-  <option value="4-Inspección">Inspección - expeditación, supervisión/PMC</option>
-  <option value="5-consultoria">Consultoría & entrenamiento</option>
-  <option value="6-diseño-fabricacion">Diseño & fabricación</option>
-  <option value="7-inspeccion-pruebas">Inspección & pruebas</option>
-  <option value="8-soluciones-gas">Soluciones para el manejo y transporte de gas natural</option>
-  <option value="9-computadores">Computadores y medidores de flujo para gas natural, combustibles refinados y aguas</option>
-  <option value="10-sistema-control-carga">Sistemas de control de carga de combustibles refinados</option>
-  <option value="11-medidores">Medidores de flujo tipo ultrasónicos no intrusivos</option>
-  <option value="12-sistema-medicion">Sistemas de medición de flujo en canales abiertos</option>
-  <option value="13-servicio-verificacion-aforo">Servicios de verificación y aforo</option>
-  <option value="14-servicio-verificacion-aforo copia">Objetivos del servicio de verificación y aforo</option>
-  <option value="15-servicio-config">Equipos utilizados en la verificación de caudal</option>
+<select class="columns h-11-v show-for-small hide-for-large white color-rojo-bg font-sm-S font-md-M" name="servicios">
+  <option value="" onclick="jala_contenido('1-elaboracion-certificacion', 0)" >Elaboración, certificación de ingeniería & owner's engineering</option>
+  <option value="" onclick="jala_contenido('2-unidades-verificacion', 0)">Unidades de verificación</option>
+  <option value="" onclick="jala_contenido('3-certificacion-seguridad', 0)">Certificación de seguridad técnica</option>
+  <option value="" onclick="jala_contenido('4-Inspección', 0)" >Inspección - expeditación, supervisión/PMC</option>
+  <option value="" onclick="jala_contenido('5-consultoria', 0)" >Consultoría & entrenamiento</option>
+  <option value="" onclick="jala_contenido('6-diseño-fabricacion', 1)" >Diseño & fabricación</option>
+  <option value="" onclick="jala_contenido('7-inspeccion-pruebas, 1')" >Inspección & pruebas</option>
+  <option value="" onclick="jala_contenido('8-soluciones-gas', 1)" >Soluciones para el manejo y transporte de gas natural</option>
+  <option value="" onclick="jala_contenido('9-computadores', 2)" >Computadores y medidores de flujo para gas natural, combustibles refinados y aguas</option>
+  <option value="" onclick="jala_contenido('10-sistema-control-carga', 2)" >Sistemas de control de carga de combustibles refinados</option>
+  <option value="" onclick="jala_contenido('11-medidores', 2)" >Medidores de flujo tipo ultrasónicos no intrusivos</option>
+  <option value="" onclick="jala_contenido('12-sistema-medicion', 2)" >Sistemas de medición de flujo en canales abiertos</option>
+  <option value="" onclick="jala_contenido('13-servicio-verificacion-aforo', 2)" >Servicios de verificación y aforo</option>
+  <option value="" onclick="jala_contenido('14-servicio-verificacion-aforo copia', 2)" >Objetivos del servicio de verificación y aforo</option>
+  <option value="" onclick="jala_contenido('15-servicio-config', 2)" >Equipos utilizados en la verificación de caudal</option>
 </select>
 
 

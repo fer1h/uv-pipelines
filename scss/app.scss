@@ -90,6 +90,32 @@ $gris: gray;
 #main .titulo {
   margin-top: 0vh;
 }
+
+#boton-menu-movil a i {
+
+  transition: '1s';
+
+}
+.rota {
+  width:auto !important;
+  -ms-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.gira {
+
+  -ms-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
+
+}
+
+.opaco {
+  opacity: 0;
+}
 //quitalo por debajo de 1024px
 @media screen and (max-width:1024px) {
   .main-padding-top {
@@ -119,7 +145,10 @@ a:hover {
 
 // sombra
 .shadow {
-  box-shadow: 0 1px 5px;
+  box-shadow: 0 1px 5px rgba(255,255,255,0.2);
+}
+.shadow-black {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
 }
 
 //Background
@@ -140,6 +169,7 @@ a:hover {
   background-color:$red;
 
 }
+
 .color-rojo{
 
   color:$red;
@@ -150,9 +180,21 @@ a:hover {
 
 }
 
+
 select {
   border: none;
   @extend .shadow;
+}
+
+button {
+  color: white;
+}
+.gray-bg {
+  background: white;
+  &:hover {
+    background: lightgray;
+    @extend .shadow-black;
+  }
 }
 //Título Master
 .titulo-master{
@@ -188,6 +230,15 @@ select {
 
 .white{
   color:$white;
+}
+
+.black {
+  color: $black;
+
+  &:hover {
+    color: $redhover;
+  }
+
 }
 
 .black-link{
@@ -244,9 +295,14 @@ select {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.color-blanco-bd {
+  border: 2px solid $white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 // menu-movil
 
-#bonoton-menu-movil {
+#boton-menu-movil {
 
   border: 0px !important;
 
@@ -267,14 +323,24 @@ select {
 }
 
 // menu escritorio
-#menu-home ul li:nth-child(3):hover {
+#sublista-menu {
+  display: none;
+}
 
-   ul#sublista-menu {
+.sub-menu-hover:hover {
 
-      display: block;
+  & #sublista-menu {
+
+    display: block;
+    z-index: 100000 !important;
 
   }
 
+
+}
+
+.top-sub-menu {
+  margin-top: 3%;
 }
 
 #menu-movil {
@@ -284,7 +350,7 @@ select {
 }
 
 .box-red {
-    background-color: #fa1730;
-    // height: 36px;
-    // width: 36px;
+  background-color: #fa1730;
+  // height: 36px;
+  // width: 36px;
 }

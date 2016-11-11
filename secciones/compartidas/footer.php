@@ -20,7 +20,7 @@
 <script src="bower_components/imgLiquid/js/imgLiquid.js"></script>
 <script src="js/js_utils.js"></script>
 <script src="js/app.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://www.google.com/recaptcha/api.js?hl=es-419'></script>
 
 </body>
 </html>
