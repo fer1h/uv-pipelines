@@ -59,8 +59,8 @@
     <div id="barra" class="columns p-0 h-22 color-negro-bg white">
 
       <div id="mail" class="columns large-6 h-100 right"></div>
-      <div id="tel" class="columns large-3 right h-a vcenter text-right end font-lg-XS"><i class="fa fa-phone"></i> Tel: Lorem ipsum dolor.</div>
-      <div id="mail" class="columns large-3 h-a vcenter right font-lg-XS"><i class="fa fa-envelope"></i> Mail: Lorem ipsum dolor.</div>
+      <div id="tel" class="columns large-3 right h-a vcenter text-right end font-lg-XS white"><a href="tel:5571552128" target="_blank" class="white"><i class="fa fa-phone white"> </i> (55) 7155 2128</div></a>
+      <div id="mail" class="columns large-3 h-a vcenter right font-lg-XS"><a href="mailto:contacto@uvpipelines.com" target="_blank" class="white"><i class="fa fa-envelope white"> </i> contacto@uvpipelines.com</div></a>
 
     </div>
 
@@ -79,15 +79,28 @@
 
         <div class="columns large-2 h-100 p-0 text-center">
           <!-- <div class="small-12  vcenter text-ctXXL> -->
-            <i class="fa fa-clock-o box-red white fontXXL text-center vcenter p1"></i>
+          <i class="fa fa-clock-o box-red white fontXXL text-center vcenter p1"></i>
           <!-- </div> -->
         </div>
 
         <div class="columns large-8 h-100 p0 end">
           <div class="columns vcenter h-a fontS p0 text-left">
 
-            <p class="columns p0 m0">Lorem ipsum dolor sit.</p>
-            <p class="columns p0 m0 gris"><small>Lorem ipsum dolor sit amet, elit. Unde, numquam?</small></p>
+            <p class="columns p0 m0">
+
+              Oficinas 9:00 hrs a 18:00 hrs.
+
+            </p>
+
+            <p class="columns p0 m0 gris">
+
+              <small>
+
+                Personal Operativo 24/7.
+
+              </small>
+
+            </p>
 
           </div>
         </div>

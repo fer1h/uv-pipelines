@@ -76,17 +76,20 @@ if($_SERVER['REQUEST_METHOD'] == 'post')
 
 </form>
 
-<div id="datos-contacto" class="columns h-sm-50vh h-md-60vh h-lg-60vh small-12 medium-6 large-6 p2">
+<div id="datos-contacto" class="columns h-sm-80vh h-md-80vh h-lg-60vh small-12 medium-6 large-6 p2 m-b-2">
 
 	<div class="columns small-11 medium-10 large-10 h-a vcenter text-left p2 small-centered">
 
-		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-home"></i> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-home"></i> Calle Raúl Sandoval No. 38 interior B. Col. Ciudad Satélite. Naucalpan de Juárez. Edo. México.
+C.P. 53100</div>
 		<br>
 		<br>
-		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-envelope"></i><a href="mailto:fer@dothemath.mx"> lorem@loremipsum.com</a></div>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-envelope"></i><a href="mailto:contacto@uvpipelines.com" class="color-rojo color-negro-hover"> contacto@uvpipelines.com</a></div>
 		<br>
 		<br>
-		<div class="columns small-12 h-a p2 font-sm-L font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-phone"></i><a href="tel:0445555555555"> 55 55 555 555555</a></div>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-phone"></i><a href="tel:5571552128" class="black color-red-hover"> (55) 7155 2128</a></div>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-phone"></i><a href="tel:5571552060" class="black color-red-hover"> (55) 7155 2060</a></div>
+		<div class="columns small-12 h-a p2 font-sm-M font-md-L font-lg-L"><i class="font-sm-M font-md-L font-lg-L fa fa-phone"></i><a href="tel:5561162216" class="black color-red-hover"> (55) 6116 2216</a></div>
 		<br>
 		<br>
 
